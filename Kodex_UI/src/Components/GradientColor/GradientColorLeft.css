@@ -1,0 +1,54 @@
+
+
+
+
+.glowing-element1{
+  position: absolute;
+  width: 3%; /* Width as a percentage of the parent container */
+  height: 5%; /* Height as a percentage of the parent container */
+  border-radius: 50%;
+  background-color: #034650;
+  box-shadow: 
+    0 0 80px 100px #034650,  /* Inner glow */
+    0 0 100px 50px #034650,  /* Middle glow */
+    0 0 320px 220px #1c5f6b; /* Outer glow */
+  transform: translateX(50%);
+ 
+  /* z-index: -1; Ensure it appears behind other elements if needed */
+}
+
+/* Adjust size and glow for tablets */
+@media (max-width: 1024px) {
+  .glowing-element1 {
+      width: 10%;
+      height: 40%;
+      box-shadow: 
+        0 0 40px 15px #034650,
+        0 0 80px 30px #034650,
+        0 0 200px 80px #1c5f6b;
+  }
+}
+
+/* Adjust size and glow for mobile devices */
+@media (max-width: 768px) {
+  .glowing-element1 {
+      width: 10%;
+      height: 30%;
+      box-shadow: 
+        0 0 25px 10px #034650,
+        0 0 50px 20px #034650,
+        0 0 150px 60px #1c5f6b;
+  }
+}
+
+/* Adjust size and glow for very small screens */
+@media (max-width: 480px) {
+  .glowing-element1 {
+      width: 10%;
+      height: 25%;
+      box-shadow: 
+        0 0 20px 5px #034650,
+        0 0 40px 15px #034650,
+        0 0 100px 40px #1c5f6b;
+  }
+}
